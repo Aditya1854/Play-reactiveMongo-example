@@ -1,0 +1,29 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+#origin allow
+
+OPTIONS /*all                                controllers.ApplicationController.preflight(all)
+
+GET     /student/                controllers.StudentController.findAll()
+GET     /student/list                controllers.StudentController.studentByUniversityName()
+GET     /student/:name               controllers.StudentController.search(name:String)
+PUT     /student/                controllers.StudentController.update()
+POST     /student/                controllers.StudentController.create()
+DELETE     /student/:id                controllers.StudentController.delete(id:Int)
+
+
+GET     /university/                controllers.UniversityController.findAll()
+GET     /university/list            controllers.UniversityController.universityAndNumberOfStudents()
+GET     /university/:name                controllers.UniversityController.search(name:String)
+POST     /university/                controllers.UniversityController.create()
+PUT     /university/               controllers.UniversityController.update()
+DELETE     /university/:id                controllers.UniversityController.delete(id:Int)
+
+POST     /user/                controllers.UserController.create()
+POST     /users/                controllers.UserController.findOne()
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file                       controllers.Assets.versioned(path="/public", file: Asset)
