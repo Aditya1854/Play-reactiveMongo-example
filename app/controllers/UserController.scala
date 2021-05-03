@@ -3,7 +3,7 @@ import com.google.inject.Inject
 
 import javax.inject._
 import play.api.mvc._
-import play.api.libs.json.{Json, __}
+import play.api.libs.json.Json
 
 import scala.concurrent.{ExecutionContext, Future}
 import models._

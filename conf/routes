@@ -8,16 +8,22 @@ OPTIONS /*all                                controllers.ApplicationController.p
 GET     /student/                controllers.StudentController.findAll()
 GET     /student/list                controllers.StudentController.studentByUniversityName()
 GET     /student/:name               controllers.StudentController.search(name:String)
++nocsrf
 PUT     /student/                controllers.StudentController.update()
++nocsrf
 POST     /student/                controllers.StudentController.create()
++nocsrf
 DELETE     /student/:id                controllers.StudentController.delete(id:Int)
 
 
 GET     /university/                controllers.UniversityController.findAll()
 GET     /university/list            controllers.UniversityController.universityAndNumberOfStudents()
 GET     /university/:name                controllers.UniversityController.search(name:String)
++nocsrf
 POST     /university/                controllers.UniversityController.create()
++nocsrf
 PUT     /university/               controllers.UniversityController.update()
++nocsrf
 DELETE     /university/:id                controllers.UniversityController.delete(id:Int)
 
 POST     /user/                controllers.UserController.create()

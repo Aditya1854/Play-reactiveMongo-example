@@ -49,25 +49,25 @@ class StudentControllerSpec extends PlaySpec with MockitoSugar with GuiceOneAppP
       contentAsString(result) must include("Token is missing")
     }
 
-//        "create student" in new WithStudentApplication() {
-//          val student= Student(1,"aditya","aditya@gmail.com",1,"1995-05-06")
-//          when(mockedRepo.createStudent(student)) thenReturn Future.successful(DefaultWriteResult(true,1,List(),None,None,None))
-//          val result = studentController.create().apply(FakeRequest())
-//          status(result) mustBe UNAUTHORIZED
-//          contentType(result) mustBe Some("text/plain")
-//          contentAsString(result) must include("Token is missing")
-//        }
-//
-//        "update university" in new WithStudentApplication() {
-//          val student= Student(1,"aditya","aditya@gmail.com",1,"1995-05-06")
-//          when(mockedRepo.updateStudent(student)) thenReturn Future.successful(UpdateWriteResult(true,1,1,List(),List(),None,None,None))
-//          val result = studentController.update().apply(FakeRequest())
-//          status(result) mustBe UNAUTHORIZED
-//          contentType(result) mustBe Some("text/plain")
-//          contentAsString(result) must include("Token is missing")
-//        }
+        "create student" in new WithStudentApplication() {
+          val student= Student(1,"aditya","aditya@gmail.com",1,"1995-05-06")
+          when(mockedRepo.createStudent(student)) thenReturn Future.successful(DefaultWriteResult(true,1,List(),None,None,None))
+          val result = studentController.create().apply(FakeRequest().withBody(Json.toJson(student)))
+          status(result) mustBe UNAUTHORIZED
+          contentType(result) mustBe Some("text/plain")
+          contentAsString(result) must include("Token is missing")
+        }
 
-    "Delete university" in new WithUniversityApplication() {
+        "update student" in new WithStudentApplication() {
+          val student= Student(1,"aditya","aditya@gmail.com",1,"1995-05-06")
+          when(mockedRepo.updateStudent(student)) thenReturn Future.successful(UpdateWriteResult(true,1,1,List(),List(),None,None,None))
+          val result = studentController.update().apply(FakeRequest().withBody(Json.toJson(student)))
+          status(result) mustBe UNAUTHORIZED
+          contentType(result) mustBe Some("text/plain")
+          contentAsString(result) must include("Token is missing")
+        }
+
+    "Delete student" in new WithUniversityApplication() {
       when(mockedRepo.deleteStudent(1)) thenReturn Future.successful(DefaultWriteResult(true,1,List(),None,None,None))
       val result = universityController.delete(1).apply(FakeRequest())
       status(result) mustBe UNAUTHORIZED

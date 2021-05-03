@@ -31,9 +31,7 @@ class UserControllerSpec extends PlaySpec with MockitoSugar with GuiceOneAppPerT
       val result = userController.findOne().apply(FakeRequest().withBody(Json.toJson(UserData("aditya@gmail.com","123456"))))
       status(result) mustBe OK
      val resultAsString = contentAsString(result)
-      println(resultAsString)
-//   resultAsString mustBe """{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjAwNzIxODEsImlhdCI6MTYxOTk4NTc4MSwKICAiZmlyc3ROYW1lIiA6ICJBZGl0eWEiLAogICJlbWFpbCIgOiAiYWRpdHlhQGdtYWlsLmNvbSIKfQ.Pwg_0qkrH3WgIZzX3AAzX890Ue_0a21aOGl7vRW_Q_M"}"""
-    }
+   }
 
   }
 

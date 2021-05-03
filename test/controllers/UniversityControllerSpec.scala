@@ -27,6 +27,7 @@ class UniversityControllerSpec extends PlaySpec with MockitoSugar with GuiceOneA
       status(result) mustBe UNAUTHORIZED
       contentType(result) mustBe Some("text/plain")
       contentAsString(result) must include("Token is missing")
+//      if you are not usimg JWT then
 //      val resultAsString = contentAsString(result)
 //      resultAsString mustBe """[{"_id":1,"name":"hcu","location":"hyderabad"}]"""
     }
@@ -49,23 +50,23 @@ class UniversityControllerSpec extends PlaySpec with MockitoSugar with GuiceOneA
       contentAsString(result) must include("Token is missing")
     }
 
-//    "create university" in new WithUniversityApplication() {
-//      val university = University(1, "hcu", "hyderabad")
-//      when(mockedRepo.createUniversity(university)) thenReturn Future.successful(DefaultWriteResult(true,1,List(),None,None,None))
-//      val result = universityController.create().apply(FakeRequest())
-//      status(result) mustBe UNAUTHORIZED
-//      contentType(result) mustBe Some("text/plain")
-//      contentAsString(result) must include("Token is missing")
-//    }
-//
-//    "update university" in new WithUniversityApplication() {
-//      val university = University(1, "hcu", "hyderabad")
-//      when(mockedRepo.updateUniversity(university)) thenReturn Future.successful(UpdateWriteResult(true,1,1,List(),List(),None,None,None))
-//      val result = universityController.update().apply(FakeRequest())
-//      status(result) mustBe UNAUTHORIZED
-//      contentType(result) mustBe Some("text/plain")
-//      contentAsString(result) must include("Token is missing")
-//    }
+    "create university" in new WithUniversityApplication() {
+      val university = University(1, "hcu", "hyderabad")
+      when(mockedRepo.createUniversity(university)) thenReturn Future.successful(DefaultWriteResult(true,1,List(),None,None,None))
+      val result = universityController.create().apply(FakeRequest().withBody(Json.toJson(university)))
+      status(result) mustBe UNAUTHORIZED
+      contentType(result) mustBe Some("text/plain")
+      contentAsString(result) must include("Token is missing")
+    }
+
+    "update university" in new WithUniversityApplication() {
+      val university = University(1, "hcu", "hyderabad")
+      when(mockedRepo.updateUniversity(university)) thenReturn Future.successful(UpdateWriteResult(true,1,1,List(),List(),None,None,None))
+      val result = universityController.update().apply(FakeRequest().withBody(Json.toJson(university)))
+      status(result) mustBe UNAUTHORIZED
+      contentType(result) mustBe Some("text/plain")
+      contentAsString(result) must include("Token is missing")
+    }
 
     "Delete university" in new WithUniversityApplication() {
       when(mockedRepo.deleteUniversity(1)) thenReturn Future.successful(DefaultWriteResult(true,1,List(),None,None,None))

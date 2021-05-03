@@ -1,7 +1,7 @@
 package models
 
 case class Student(_id:Int, name:String, email:String, universityId:Int,DOB:String)
-
+//{"_id":1,"name":"Aditya kumar","email":"aditya@gmail.com","universityId":1,"DOB":"1996-05-06"}
 case class University(_id:Int, name:String, location:String)
 
 case class StudentJoin(_id:Int,name:String,email:String,universityId:Int,DOB:String,universityDetails:Array[University])

@@ -3,7 +3,7 @@ import com.google.inject.Inject
 
 import javax.inject._
 import play.api.mvc._
-import play.api.libs.json.{Json, __}
+import play.api.libs.json.Json
 
 import scala.concurrent.{ExecutionContext, Future}
 import models.{University, UniversityData}
@@ -21,7 +21,7 @@ class UniversityController @Inject()(cc: ControllerComponents, security : Secure
     universityRepository.findAll().map(university => Ok(Json.toJson(university)).withHeaders("Access-Control-Allow-Origin" -> "*"))
   }
 
-  def create():Action[JsValue] = security.async(controllerComponents.parsers.json) { implicit request => {
+  def create():Action[JsValue] = security.async(parse.json) { implicit request => {
     request.body.validate[University].fold(
       _ => Future.successful(BadRequest("Cannot parse request body")),
       university =>
@@ -31,7 +31,7 @@ class UniversityController @Inject()(cc: ControllerComponents, security : Secure
     )
   }}
 
-  def update():Action[JsValue]  = security.async(controllerComponents.parsers.json) { implicit request => {
+  def update():Action[JsValue]  = security.async(parse.json) { implicit request => {
     request.body.validate[University].fold(
       _ => Future.successful(BadRequest("Cannot parse request body")),
       university =>

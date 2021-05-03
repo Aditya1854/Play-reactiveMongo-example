@@ -2,9 +2,8 @@ package controllers
 
 import com.google.inject.Inject
 
-import javax.inject._
-import play.api.mvc._
-import play.api.libs.json.{Json, __}
+import play.api.mvc.{Action, _}
+import play.api.libs.json.Json
 
 import scala.concurrent.{ExecutionContext, Future}
 import models.{Student, StudentData}
@@ -14,7 +13,6 @@ import utilities.SecureUser
 import utils.JsonFormat._
 
 
-@Singleton
 class StudentController @Inject()(cc: ControllerComponents,security : SecureUser,studentRepository: StudentRepository,university : UniversityRepository)
                                  (implicit ec: ExecutionContext) extends AbstractController(cc) {
 
@@ -22,7 +20,7 @@ class StudentController @Inject()(cc: ControllerComponents,security : SecureUser
     studentRepository.findAll().map(student => Ok(Json.toJson(student)).withHeaders("Access-Control-Allow-Origin" -> "*"))
   }
 
-  def create():Action[JsValue] = security.async(controllerComponents.parsers.json) { implicit request => {
+  def create():Action[JsValue] = security.async(parse.json){ implicit request => {
 
     request.body.validate[Student].fold(
       _ => Future.successful(BadRequest("Cannot parse request body")),
@@ -33,9 +31,10 @@ class StudentController @Inject()(cc: ControllerComponents,security : SecureUser
     )
   }}
 
-  def update():Action[JsValue]  = security.async(controllerComponents.parsers.json) { implicit request => {
+  def update():Action[JsValue]  = security.async(parse.json){ implicit request => {
     request.body.validate[Student].fold(
-      _ => Future.successful(BadRequest("Cannot parse request body")),
+      error =>{
+        Future.successful(BadRequest("Cannot parse request body"))},
       student =>
         studentRepository.updateStudent(student).map {
             result => Ok(Json.toJson(result.ok)).withHeaders("Access-Control-Allow-Origin" -> "*")

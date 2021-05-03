@@ -1,34 +1,181 @@
-[34m[INFO][0;39m - [2021-05-03 01:57:00,031] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
-[34m[INFO][0;39m - [2021-05-03 01:57:00,261] - [play.api.http.EnabledFilters] Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+[34m[INFO][0;39m - [2021-05-03 13:26:59,549] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:26:59,691] - [play.api.http.EnabledFilters] Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-[34m[INFO][0;39m - [2021-05-03 01:57:00,372] - [play.api.Play] Application started (Dev) (no global state)
-[34m[INFO][0;39m - [2021-05-03 01:57:00,845] - [reactivemongo.api.Driver] No mongo-async-driver configuration found
-[34m[INFO][0;39m - [2021-05-03 01:57:00,864] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
-[34m[INFO][0;39m - [2021-05-03 01:57:00,935] - [reactivemongo.api.Driver] [Supervisor-1] Creating connection: Connection-1
-[34m[INFO][0;39m - [2021-05-03 01:57:00,998] - [reactivemongo.core.actors.MongoDBSystem] [Supervisor-1/Connection-1] Starting the MongoDBSystem
-[34m[INFO][0;39m - [2021-05-03 01:57:01,018] - [reactivemongo.core.netty.Pack] Instantiated reactivemongo.core.netty.Pack
-[31m[WARN][0;39m - [2021-05-03 01:57:20,307] - [play.filters.CSRF] [CSRF] Check failed because no token found in headers for /university/list
-[31m[WARN][0;39m - [2021-05-03 01:57:56,199] - [play.filters.CSRF] [CSRF] Check failed because no token found in headers for /university/4
-[34m[INFO][0;39m - [2021-05-03 01:58:08,036] - [play.api.internal.libs.concurrent.CoordinatedShutdownSupport] Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
-[34m[INFO][0;39m - [2021-05-03 01:58:08,044] - [play.core.server.AkkaHttpServer] Stopping Akka HTTP server...
-[34m[INFO][0;39m - [2021-05-03 01:58:08,064] - [play.core.server.AkkaHttpServer] Terminating server binding for /0:0:0:0:0:0:0:0:9000
-[34m[INFO][0;39m - [2021-05-03 01:58:08,076] - [play.modules.reactivemongo.DefaultReactiveMongoApi] ReactiveMongoApi stopping...
-[34m[INFO][0;39m - [2021-05-03 01:58:08,110] - [reactivemongo.core.actors.MongoDBSystem] [Supervisor-1/Connection-1] Stopping the MongoDBSystem
-[34m[INFO][0;39m - [2021-05-03 01:58:08,111] - [play.modules.reactivemongo.DefaultReactiveMongoApi] ReactiveMongoApi connections are stopped
-[34m[INFO][0;39m - [2021-05-03 01:58:08,112] - [reactivemongo.api.Driver] [Supervisor-1] Closing instance of ReactiveMongo driver
-[34m[INFO][0;39m - [2021-05-03 01:58:08,115] - [reactivemongo.api.Driver] [Supervisor-1] Stopping the monitor...
-[34m[INFO][0;39m - [2021-05-03 01:58:08,119] - [akka.actor.RepointableActorRef] Message [reactivemongo.core.actors.ChannelDisconnected] to Actor[akka://reactivemongo/user/Connection-1#-1641438805] was not delivered. [1] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-1641438805] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[34m[INFO][0;39m - [2021-05-03 01:58:08,122] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-1641438805] to Actor[akka://reactivemongo/user/Connection-1#-1641438805] was not delivered. [2] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-1641438805] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[34m[INFO][0;39m - [2021-05-03 01:58:08,123] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-1641438805] to Actor[akka://reactivemongo/user/Connection-1#-1641438805] was not delivered. [3] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-1641438805] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[34m[INFO][0;39m - [2021-05-03 01:58:08,126] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-1641438805] to Actor[akka://reactivemongo/user/Connection-1#-1641438805] was not delivered. [4] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-1641438805] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[34m[INFO][0;39m - [2021-05-03 01:58:08,127] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-1641438805] to Actor[akka://reactivemongo/user/Connection-1#-1641438805] was not delivered. [5] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-1641438805] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[34m[INFO][0;39m - [2021-05-03 01:58:08,128] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-1641438805] to Actor[akka://reactivemongo/user/Connection-1#-1641438805] was not delivered. [6] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-1641438805] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[34m[INFO][0;39m - [2021-05-03 01:58:08,128] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-1641438805] to Actor[akka://reactivemongo/user/Connection-1#-1641438805] was not delivered. [7] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-1641438805] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[34m[INFO][0;39m - [2021-05-03 01:58:08,129] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-1641438805] to Actor[akka://reactivemongo/user/Connection-1#-1641438805] was not delivered. [8] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-1641438805] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[34m[INFO][0;39m - [2021-05-03 01:58:08,130] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-1641438805] to Actor[akka://reactivemongo/user/Connection-1#-1641438805] was not delivered. [9] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-1641438805] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[34m[INFO][0;39m - [2021-05-03 01:58:08,131] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-1641438805] to Actor[akka://reactivemongo/user/Connection-1#-1641438805] was not delivered. [10] dead letters encountered, no more dead letters will be logged in next [5.000 min]. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-1641438805] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[34m[INFO][0;39m - [2021-05-03 01:58:08,180] - [play.core.server.AkkaHttpServer] Running provided shutdown stop hooks
+[34m[INFO][0;39m - [2021-05-03 13:26:59,793] - [play.api.Play] Application started (Dev) (no global state)
+[34m[INFO][0;39m - [2021-05-03 13:27:00,476] - [reactivemongo.api.Driver] No mongo-async-driver configuration found
+[34m[INFO][0;39m - [2021-05-03 13:27:00,500] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:27:00,575] - [reactivemongo.api.Driver] [Supervisor-1] Creating connection: Connection-1
+[34m[INFO][0;39m - [2021-05-03 13:27:00,658] - [reactivemongo.core.actors.MongoDBSystem] [Supervisor-1/Connection-1] Starting the MongoDBSystem
+[34m[INFO][0;39m - [2021-05-03 13:27:00,681] - [reactivemongo.core.netty.Pack] Instantiated reactivemongo.core.netty.Pack
+[34m[INFO][0;39m - [2021-05-03 13:28:26,256] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:27,472] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:28,261] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:28,562] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:28,807] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:29,034] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:29,316] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:29,500] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:29,817] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:30,001] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:30,229] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:30,400] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:30,767] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:30,933] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:31,339] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:31,573] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:31,784] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:32,139] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:32,318] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:32,463] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:32,639] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:32,810] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:32,983] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:33,219] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:33,415] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:33,583] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:33,660] - [reactivemongo.api.Driver] No mongo-async-driver configuration found
+[34m[INFO][0;39m - [2021-05-03 13:28:33,674] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:33,747] - [reactivemongo.api.Driver] [Supervisor-1] Creating connection: Connection-1
+[34m[INFO][0;39m - [2021-05-03 13:28:33,835] - [reactivemongo.core.actors.MongoDBSystem] [Supervisor-1/Connection-1] Starting the MongoDBSystem
+[34m[INFO][0;39m - [2021-05-03 13:28:33,871] - [reactivemongo.core.netty.Pack] Instantiated reactivemongo.core.netty.Pack
+[34m[INFO][0;39m - [2021-05-03 13:28:34,520] - [play.modules.reactivemongo.DefaultReactiveMongoApi] ReactiveMongoApi stopping...
+[34m[INFO][0;39m - [2021-05-03 13:28:34,549] - [reactivemongo.core.actors.MongoDBSystem] [Supervisor-1/Connection-1] Stopping the MongoDBSystem
+[34m[INFO][0;39m - [2021-05-03 13:28:34,553] - [play.modules.reactivemongo.DefaultReactiveMongoApi] ReactiveMongoApi connections are stopped
+[34m[INFO][0;39m - [2021-05-03 13:28:34,555] - [reactivemongo.api.Driver] [Supervisor-1] Closing instance of ReactiveMongo driver
+[34m[INFO][0;39m - [2021-05-03 13:28:34,561] - [akka.actor.RepointableActorRef] Message [reactivemongo.core.actors.ChannelDisconnected] to Actor[akka://reactivemongo/user/Connection-1#1800724011] was not delivered. [1] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#1800724011] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:28:34,563] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#1800724011] to Actor[akka://reactivemongo/user/Connection-1#1800724011] was not delivered. [2] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#1800724011] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:28:34,582] - [reactivemongo.api.Driver] [Supervisor-1] Stopping the monitor...
+[34m[INFO][0;39m - [2021-05-03 13:28:34,713] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:34,782] - [reactivemongo.api.Driver] No mongo-async-driver configuration found
+[34m[INFO][0;39m - [2021-05-03 13:28:34,811] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:34,855] - [reactivemongo.core.actors.MongoDBSystem] [Supervisor-2/Connection-1] Starting the MongoDBSystem
+[34m[INFO][0;39m - [2021-05-03 13:28:34,857] - [reactivemongo.core.netty.Pack] Instantiated reactivemongo.core.netty.Pack
+[34m[INFO][0;39m - [2021-05-03 13:28:34,861] - [reactivemongo.api.Driver] [Supervisor-2] Creating connection: Connection-1
+[34m[INFO][0;39m - [2021-05-03 13:28:35,087] - [play.modules.reactivemongo.DefaultReactiveMongoApi] ReactiveMongoApi stopping...
+[34m[INFO][0;39m - [2021-05-03 13:28:35,098] - [reactivemongo.core.actors.MongoDBSystem] [Supervisor-2/Connection-1] Stopping the MongoDBSystem
+[34m[INFO][0;39m - [2021-05-03 13:28:35,100] - [play.modules.reactivemongo.DefaultReactiveMongoApi] ReactiveMongoApi connections are stopped
+[34m[INFO][0;39m - [2021-05-03 13:28:35,100] - [reactivemongo.api.Driver] [Supervisor-2] Closing instance of ReactiveMongo driver
+[34m[INFO][0;39m - [2021-05-03 13:28:35,101] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#344361843] to Actor[akka://reactivemongo/user/Connection-1#344361843] was not delivered. [1] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#344361843] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:28:35,101] - [akka.actor.RepointableActorRef] Message [reactivemongo.core.actors.ChannelDisconnected] to Actor[akka://reactivemongo/user/Connection-1#344361843] was not delivered. [2] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#344361843] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:28:35,102] - [reactivemongo.api.Driver] [Supervisor-2] Stopping the monitor...
+[34m[INFO][0;39m - [2021-05-03 13:28:35,265] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:35,387] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:35,539] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:35,649] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:35,823] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:35,949] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:36,087] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:36,200] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:36,407] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:36,520] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:36,722] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:36,827] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:37,005] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:37,101] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:37,249] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:28:37,335] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:09,073] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:10,281] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:11,103] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:11,287] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:11,559] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:11,847] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:12,178] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:12,383] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:12,721] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:12,931] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:13,162] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:13,369] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:13,798] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:14,022] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:14,484] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:14,743] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:15,034] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:15,430] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:15,705] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:15,912] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:16,147] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:16,367] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:16,583] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:16,806] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:17,064] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:17,320] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:17,407] - [reactivemongo.api.Driver] No mongo-async-driver configuration found
+[34m[INFO][0;39m - [2021-05-03 13:31:17,488] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:17,606] - [reactivemongo.api.Driver] [Supervisor-1] Creating connection: Connection-1
+[34m[INFO][0;39m - [2021-05-03 13:31:17,704] - [reactivemongo.core.actors.MongoDBSystem] [Supervisor-1/Connection-1] Starting the MongoDBSystem
+[34m[INFO][0;39m - [2021-05-03 13:31:17,726] - [reactivemongo.core.netty.Pack] Instantiated reactivemongo.core.netty.Pack
+[34m[INFO][0;39m - [2021-05-03 13:31:18,446] - [play.modules.reactivemongo.DefaultReactiveMongoApi] ReactiveMongoApi stopping...
+[34m[INFO][0;39m - [2021-05-03 13:31:18,510] - [play.modules.reactivemongo.DefaultReactiveMongoApi] ReactiveMongoApi connections are stopped
+[34m[INFO][0;39m - [2021-05-03 13:31:18,511] - [reactivemongo.core.actors.MongoDBSystem] [Supervisor-1/Connection-1] Stopping the MongoDBSystem
+[34m[INFO][0;39m - [2021-05-03 13:31:18,511] - [reactivemongo.api.Driver] [Supervisor-1] Closing instance of ReactiveMongo driver
+[34m[INFO][0;39m - [2021-05-03 13:31:18,528] - [reactivemongo.api.Driver] [Supervisor-1] Stopping the monitor...
+[34m[INFO][0;39m - [2021-05-03 13:31:18,684] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:18,782] - [reactivemongo.api.Driver] No mongo-async-driver configuration found
+[34m[INFO][0;39m - [2021-05-03 13:31:18,807] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:18,862] - [reactivemongo.core.actors.MongoDBSystem] [Supervisor-2/Connection-1] Starting the MongoDBSystem
+[34m[INFO][0;39m - [2021-05-03 13:31:18,863] - [reactivemongo.core.netty.Pack] Instantiated reactivemongo.core.netty.Pack
+[34m[INFO][0;39m - [2021-05-03 13:31:18,866] - [reactivemongo.api.Driver] [Supervisor-2] Creating connection: Connection-1
+[34m[INFO][0;39m - [2021-05-03 13:31:19,135] - [play.modules.reactivemongo.DefaultReactiveMongoApi] ReactiveMongoApi stopping...
+[34m[INFO][0;39m - [2021-05-03 13:31:19,146] - [reactivemongo.core.actors.MongoDBSystem] [Supervisor-2/Connection-1] Stopping the MongoDBSystem
+[34m[INFO][0;39m - [2021-05-03 13:31:19,146] - [play.modules.reactivemongo.DefaultReactiveMongoApi] ReactiveMongoApi connections are stopped
+[34m[INFO][0;39m - [2021-05-03 13:31:19,147] - [reactivemongo.api.Driver] [Supervisor-2] Closing instance of ReactiveMongo driver
+[34m[INFO][0;39m - [2021-05-03 13:31:19,154] - [reactivemongo.api.Driver] [Supervisor-2] Stopping the monitor...
+[34m[INFO][0;39m - [2021-05-03 13:31:19,153] - [akka.actor.RepointableActorRef] Message [reactivemongo.core.actors.ChannelDisconnected] to Actor[akka://reactivemongo/user/Connection-1#-586771476] was not delivered. [1] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-586771476] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:31:19,385] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:19,531] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:19,794] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:19,955] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:20,219] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:20,382] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:20,638] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:20,758] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:20,914] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:21,080] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:21,294] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:21,435] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:21,654] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:21,782] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:21,986] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[34m[INFO][0;39m - [2021-05-03 13:31:22,114] - [akka.event.slf4j.Slf4jLogger] Slf4jLogger started
+[1;31m[ERROR][0;39m - [2021-05-03 13:32:16,696] - [play.api.http.DefaultHttpErrorHandler] 
+
+! @7ji676lnb - Internal server error, for (POST) [/student/] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[LastError: DatabaseException['E11000 duplicate key error collection: db1.student index: _id_ dup key: { : 5 }' (code = 11000)]]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:359)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:261)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:430)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:422)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:454)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:48)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: reactivemongo.api.commands.LastError: DatabaseException['E11000 duplicate key error collection: db1.student index: _id_ dup key: { : 5 }' (code = 11000)]
+[34m[INFO][0;39m - [2021-05-03 13:38:27,724] - [play.api.internal.libs.concurrent.CoordinatedShutdownSupport] Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
+[34m[INFO][0;39m - [2021-05-03 13:38:27,728] - [play.core.server.AkkaHttpServer] Stopping Akka HTTP server...
+[34m[INFO][0;39m - [2021-05-03 13:38:27,737] - [play.core.server.AkkaHttpServer] Terminating server binding for /0:0:0:0:0:0:0:0:9000
+[34m[INFO][0;39m - [2021-05-03 13:38:27,767] - [play.modules.reactivemongo.DefaultReactiveMongoApi] ReactiveMongoApi stopping...
+[34m[INFO][0;39m - [2021-05-03 13:38:27,816] - [reactivemongo.core.actors.MongoDBSystem] [Supervisor-1/Connection-1] Stopping the MongoDBSystem
+[34m[INFO][0;39m - [2021-05-03 13:38:27,817] - [play.modules.reactivemongo.DefaultReactiveMongoApi] ReactiveMongoApi connections are stopped
+[34m[INFO][0;39m - [2021-05-03 13:38:27,818] - [reactivemongo.api.Driver] [Supervisor-1] Closing instance of ReactiveMongo driver
+[34m[INFO][0;39m - [2021-05-03 13:38:27,820] - [reactivemongo.api.Driver] [Supervisor-1] Stopping the monitor...
+[34m[INFO][0;39m - [2021-05-03 13:38:27,827] - [akka.actor.RepointableActorRef] Message [reactivemongo.core.actors.ChannelDisconnected] to Actor[akka://reactivemongo/user/Connection-1#-68895004] was not delivered. [1] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-68895004] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:38:27,830] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-68895004] to Actor[akka://reactivemongo/user/Connection-1#-68895004] was not delivered. [2] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-68895004] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:38:27,831] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-68895004] to Actor[akka://reactivemongo/user/Connection-1#-68895004] was not delivered. [3] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-68895004] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:38:27,832] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-68895004] to Actor[akka://reactivemongo/user/Connection-1#-68895004] was not delivered. [4] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-68895004] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:38:27,833] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-68895004] to Actor[akka://reactivemongo/user/Connection-1#-68895004] was not delivered. [5] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-68895004] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:38:27,834] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-68895004] to Actor[akka://reactivemongo/user/Connection-1#-68895004] was not delivered. [6] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-68895004] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:38:27,834] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-68895004] to Actor[akka://reactivemongo/user/Connection-1#-68895004] was not delivered. [7] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-68895004] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:38:27,835] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-68895004] to Actor[akka://reactivemongo/user/Connection-1#-68895004] was not delivered. [8] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-68895004] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:38:27,835] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-68895004] to Actor[akka://reactivemongo/user/Connection-1#-68895004] was not delivered. [9] dead letters encountered. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-68895004] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:38:27,836] - [akka.actor.RepointableActorRef] Message [scala.Tuple2] from Actor[akka://reactivemongo/user/Connection-1#-68895004] to Actor[akka://reactivemongo/user/Connection-1#-68895004] was not delivered. [10] dead letters encountered, no more dead letters will be logged in next [5.000 min]. If this is not an expected behavior then Actor[akka://reactivemongo/user/Connection-1#-68895004] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[34m[INFO][0;39m - [2021-05-03 13:38:27,903] - [play.core.server.AkkaHttpServer] Running provided shutdown stop hooks
